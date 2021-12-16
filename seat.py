@@ -183,7 +183,7 @@ elif date == '2':
     now = datetime.now()
     now_time = now.strftime('%m-%d')
     now_hour = datetime.strptime(str(now.hour) + '-' + str(now.minute), '%H-%M')
-    target = datetime.strptime('22-45', '%H-%M')
+    target = datetime.strptime(str(now.year)+'-22-45', '%Y-%H-%M')
     less = target - now_hour
     while now_time < '22-45':
         now = datetime.now()
