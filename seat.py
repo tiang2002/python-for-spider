@@ -187,7 +187,7 @@ elif date == '2':
     less = target - now_hour
     while now_time < '22-45':
         now = datetime.now()
-        now_time = now.strftime('%m-%d')
+        now_time = now.strftime('%H-%M')
         less = target - now
         print('                                  \r', end='')
         print('距离系统开放还有' + str(less.seconds) + '秒', end='')
